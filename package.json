@@ -1,0 +1,14 @@
+{
+  "name": "final-frontier",
+  "version": "1.0.0",
+  "description": "flickr photo viewing web app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Hromadka",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

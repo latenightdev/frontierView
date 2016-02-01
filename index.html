@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <title>FrontierView</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <!-- Overlay -->
+  <div id="overlay"></div>
+
+  <!-- Fixed navigation -->
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container-fluid">
+      <div class="pull-left">
+        <div class="navbar-header">
+          <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" class="hidden-xs hidden-sm" /><img src="img/logo-sm.png" class="hidden-md hidden-lg" /></a>
+        </div>
+      </div>
+      <div class="pull-right">
+        <form id="search-form" action="" method="">
+          <div class="search-wrapper">
+            <input id="search-text" class="pull-left" type="text" value="" placeholder="Search..." />
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Status bar -->
+    <div class="container-fluid">
+      <div class="state-bar clearfix">
+        <div class="loader-wrapper">
+          <div id="loader"><b class="hidden-xs">Loading...</b></div>
+        </div>        
+        <div class="pull-left hidden-xs">
+          <p id="results">Displaying 0 Images</p>
+        </div>
+        <div class="pull-right hidden-xs">
+          <b>Sort:</b>
+          <select id="sort-view">
+            <option value="date-posted-desc" class="active">Date Posted (desc)</option>
+            <option value="date-posted-asc">Date Posted (asc)</option>
+            <option value="date-taken-desc">Date Taken (desc)</option>
+            <option value="date-taken-asc">Date Taken (asc)</option>            
+          </select>          
+        </div>
+      </div>
+    </div>      
+  </nav>  
+
+  <!-- Main view -->
+  <section class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Image view -->
+        <div id="image-view"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <section id="lightbox">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="lightbox-view">
+          <a href="#" id="lightbox-close">X</a>
+          <img id="preview" src="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
